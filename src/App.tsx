@@ -19,6 +19,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <img className="brand-mark" src="/logo-tb.png" alt="" aria-hidden="true" />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/warmup" element={<WarmupHomeScreen />} />
