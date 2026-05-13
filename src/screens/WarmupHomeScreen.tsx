@@ -10,7 +10,7 @@ interface Exercise {
 
 const EXERCISES: Exercise[] = [
   { to: '/warmup/letter', num: '01', label: 'Слова на букву',       hint: 'Минута. Назови как можно больше слов на выпавшую букву', ready: true  },
-  { to: '/warmup/assoc',  num: '02', label: 'Ассоциативный ряд',    hint: 'Цепочка ассоциаций от заданного слова',                  ready: false },
+  { to: '/warmup/assoc',  num: '02', label: 'Ассоциативный ряд',    hint: 'Выпадает существительное — называй всё, что с ним связано', ready: true  },
 ];
 
 export default function WarmupHomeScreen() {

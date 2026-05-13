@@ -1,4 +1,4 @@
-import { extractMatchingWords } from './words';
+import { extractMatchingWords, extractAllWords } from './words';
 
 interface SRResultAlternative { transcript: string }
 interface SRResult {
@@ -91,6 +91,69 @@ export function createRecognizer(
     stop() {
       manualStop = true;
       try { rec.stop(); } catch { /* ignore */ }
+    },
+  };
+}
+
+/**
+ * Recognizer без фильтра по букве — собирает все распознанные русские
+ * слова, исключая `exclude` (например, само стимул-слово) и стоп-слова.
+ * Используется в тренажёре ассоциаций.
+ */
+export function createAllRecognizer(
+  exclude: Set<string>,
+  onUpdate: (words: string[]) => void,
+  onError?: (e: SRErrorEvent) => void,
+): Recognizer | null {
+  const SRC = getSR();
+  if (!SRC) return null;
+  let rec: SR;
+  try { rec = new SRC(); } catch { return null; }
+  rec.lang = 'ru-RU';
+  rec.continuous = true;
+  rec.interimResults = true;
+
+  let finalText = '';
+  let lastEmittedKey = '';
+
+  rec.onresult = (e) => {
+    let interimText = '';
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      const r = e.results[i];
+      const t = r[0]?.transcript || '';
+      if (r.isFinal) finalText += ' ' + t;
+      else interimText += ' ' + t;
+    }
+    const combined = finalText + ' ' + interimText;
+    const words = extractAllWords(combined, exclude);
+    const key = words.join('|');
+    if (key !== lastEmittedKey) {
+      lastEmittedKey = key;
+      onUpdate(words);
+    }
+  };
+
+  rec.onerror = (e) => { onError?.(e); };
+
+  let manualStop = false;
+  rec.onend = () => {
+    if (!manualStop) {
+      try { rec.start(); } catch {}
+    }
+  };
+
+  return {
+    start() {
+      try { rec.start(); return true; }
+      catch (e) {
+        const err = e as { error?: string; message?: string };
+        onError?.({ error: err.error || err.message || 'start-failed' });
+        return false;
+      }
+    },
+    stop() {
+      manualStop = true;
+      try { rec.stop(); } catch {}
     },
   };
 }
