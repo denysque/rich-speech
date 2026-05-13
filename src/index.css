@@ -1548,13 +1548,7 @@ h1, h2, h3 {
 }
 :root[data-theme="dark"] .brand-mark { filter: invert(1) brightness(0.92); }
 
-/* Когда лого в .footer-promo — лево-выровненный «колонтитул»:
-   логотип на отдельной строке, под ним telegram-ссылка. Базовый
-   .footer-promo уже text-align: left, нужно только зафиксировать,
-   чтобы лого не центрировалось через `margin: auto`. */
-.footer-promo.has-brand .brand-mark {
-  margin: 0 0 12px;
-}
-.footer-promo.has-brand a {
-  justify-content: flex-start;
-}
+/* Когда лого в .footer-promo — центрированный «колофон»:
+   логотип на отдельной строке, под ним telegram-ссылка. */
+.footer-promo.has-brand { text-align: center; }
+.footer-promo.has-brand a { justify-content: center; }
