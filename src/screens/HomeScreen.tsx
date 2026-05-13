@@ -2,6 +2,40 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { QUOTES, getDailyQuoteIdx, pickRandomQuoteIdx } from '@/lib/quotes';
 import { computeStreak, pluralDays, type StreakInfo } from '@/lib/streak';
+import { getSettings, setSettings } from '@/lib/storage';
+import { THEME_LABEL, type Theme } from '@/lib/constants';
+
+const THEME_CYCLE: Theme[] = ['auto', 'light', 'dark'];
+
+function applyTheme(t: Theme) {
+  if (typeof document === 'undefined') return;
+  if (t === 'auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.dataset.theme = t;
+}
+
+function ThemeIcon({ theme }: { theme: Theme }) {
+  if (theme === 'light') {
+    return (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 3v1.5M12 19.5V21M4.22 4.22l1.06 1.06M18.72 18.72l1.06 1.06M3 12h1.5M19.5 12H21M4.22 19.78l1.06-1.06M18.72 5.28l1.06-1.06" />
+      </svg>
+    );
+  }
+  if (theme === 'dark') {
+    return (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <path d="M20.5 14.2A8 8 0 0 1 9.8 3.5a8 8 0 1 0 10.7 10.7Z" />
+      </svg>
+    );
+  }
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 3a9 9 0 0 0 0 18Z" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
 
 interface Section {
   to: string;
@@ -27,6 +61,15 @@ export default function HomeScreen() {
   const [streak, setStreak] = useState<StreakInfo>({ current: 0, todayDone: false, totalAttempts: 0, totalDays: 0 });
   useEffect(() => { setStreak(computeStreak()); }, []);
 
+  const [theme, setThemeState] = useState<Theme>('auto');
+  useEffect(() => { setThemeState(getSettings().theme); }, []);
+  const cycleTheme = () => {
+    const next = THEME_CYCLE[(THEME_CYCLE.indexOf(theme) + 1) % THEME_CYCLE.length];
+    setSettings({ theme: next });
+    applyTheme(next);
+    setThemeState(next);
+  };
+
   const streakStatus =
     streak.current === 0
       ? 'Тренируйся хотя бы раз в день — серия пойдёт.'
@@ -38,6 +81,18 @@ export default function HomeScreen() {
 
   return (
     <div className="screen">
+      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <button
+          className="icon-btn"
+          type="button"
+          onClick={cycleTheme}
+          aria-label={`Тема: ${THEME_LABEL[theme]}. Переключить.`}
+          title={`Тема: ${THEME_LABEL[theme]}`}
+        >
+          <ThemeIcon theme={theme} />
+        </button>
+      </div>
+
       <header className="title-block">
         <h1>Rich Speech</h1>
         <p>Тренажёр устной речи</p>
