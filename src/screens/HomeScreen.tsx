@@ -10,7 +10,7 @@ interface Section {
 
 const SECTIONS: Section[] = [
   { to: '/warmup',   num: '00', label: 'Разминка',       hint: 'Гимнастика речи перед основными упражнениями', ready: true  },
-  { to: '/describe', num: '01', label: 'Описание',       hint: 'Опиши предмет, человека или место за минуту',  ready: false },
+  { to: '/describe', num: '01', label: 'Описание',       hint: 'Опиши шедевр живописи — композиция, цвет, эмоция', ready: true  },
   { to: '/narrate',  num: '02', label: 'Повествование',  hint: 'Расскажи историю — что было, что стало',        ready: false },
   { to: '/reason',   num: '03', label: 'Рассуждение',    hint: 'Объясни, докажи, обоснуй позицию',              ready: false },
 ];

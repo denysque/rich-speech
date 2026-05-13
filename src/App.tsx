@@ -5,6 +5,7 @@ import HomeScreen from '@/screens/HomeScreen';
 import WarmupHomeScreen from '@/screens/WarmupHomeScreen';
 import LetterTrainer from '@/screens/LetterTrainer';
 import AssocTrainer from '@/screens/AssocTrainer';
+import DescribeTrainer from '@/screens/DescribeTrainer';
 import PlaceholderScreen from '@/screens/PlaceholderScreen';
 
 function applyStoredTheme() {
@@ -25,10 +26,7 @@ export default function App() {
         <Route path="/warmup" element={<WarmupHomeScreen />} />
         <Route path="/warmup/letter" element={<LetterTrainer />} />
         <Route path="/warmup/assoc" element={<AssocTrainer />} />
-        <Route
-          path="/describe"
-          element={<PlaceholderScreen title="Описание" subtitle="Тренажёр / 01" backTo="/" />}
-        />
+        <Route path="/describe" element={<DescribeTrainer />} />
         <Route
           path="/narrate"
           element={<PlaceholderScreen title="Повествование" subtitle="Тренажёр / 02" backTo="/" />}

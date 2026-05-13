@@ -17,6 +17,11 @@ export function pluralWords(n: number): string {
   return 'слов';
 }
 
+export function countWords(text: string): number {
+  if (!text) return 0;
+  return text.trim().split(/\s+/).filter(Boolean).length;
+}
+
 export function formatRelativeDate(ts: number): string {
   const d = new Date(ts);
   const now = new Date();
