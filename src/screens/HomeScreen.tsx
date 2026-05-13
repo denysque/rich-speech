@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { QUOTES, getDailyQuoteIdx, pickRandomQuoteIdx } from '@/lib/quotes';
 
 interface Section {
   to: string;
@@ -16,12 +18,33 @@ const SECTIONS: Section[] = [
 ];
 
 export default function HomeScreen() {
+  const [quoteIdx, setQuoteIdx] = useState<number>(() => getDailyQuoteIdx());
+  const quote = QUOTES[quoteIdx];
+
+  const refreshQuote = () => setQuoteIdx((prev) => pickRandomQuoteIdx(prev));
+
   return (
     <div className="screen">
       <header className="title-block">
         <h1>Rich Speech</h1>
         <p>Тренажёр устной речи</p>
       </header>
+
+      <div className="hero">
+        Шесть упражнений на разные жанры устной речи — от беглости и ассоциаций до
+        связного повествования и аргументации. Цель — <strong>не идеально, а беглее</strong>.
+        Все упражнения распознают речь автоматически, считают темп и дают грейд.
+      </div>
+
+      <section className="instructions-block">
+        <div className="heading">Как пользоваться</div>
+        <ol>
+          <li>Начни с <strong>разминки</strong> — она запускает речевой аппарат на 1–2 минуты.</li>
+          <li>Выбери основной раздел — описание, повествование или рассуждение.</li>
+          <li>Настрой уровень и длительность (20 / 40 / 60 секунд) — жми «Начать».</li>
+          <li>Говори вслух в микрофон — на результате увидишь темп слов в минуту и грейд.</li>
+        </ol>
+      </section>
 
       <nav className="pos-list">
         {SECTIONS.map((s) => (
@@ -47,6 +70,17 @@ export default function HomeScreen() {
           </Link>
         ))}
       </nav>
+
+      <section className="quote-block">
+        <div className="heading">
+          <span>Цитата дня</span>
+          <button type="button" className="refresh" onClick={refreshQuote} aria-label="Другая цитата">
+            ↻
+          </button>
+        </div>
+        <blockquote>«{quote.text}»</blockquote>
+        <div className="attribution">{quote.author}</div>
+      </section>
 
       <div className="grow" />
 
