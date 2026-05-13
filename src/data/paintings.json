@@ -1,12 +1,5 @@
 [
   {
-    "id": "starry-night",
-    "title": "Звёздная ночь",
-    "artist": "Винсент Ван Гог",
-    "year": "1889",
-    "file": "Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
-  },
-  {
     "id": "mona-lisa",
     "title": "Мона Лиза",
     "artist": "Леонардо да Винчи",
@@ -14,25 +7,46 @@
     "file": "Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"
   },
   {
-    "id": "the-scream",
-    "title": "Крик",
-    "artist": "Эдвард Мунк",
-    "year": "1893",
-    "file": "Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg"
+    "id": "last-supper",
+    "title": "Тайная вечеря",
+    "artist": "Леонардо да Винчи",
+    "year": "1495-1498",
+    "file": "Última_Cena_-_Da_Vinci_5.jpg"
   },
   {
-    "id": "pearl-earring",
-    "title": "Девушка с жемчужной серёжкой",
-    "artist": "Ян Вермеер",
-    "year": "ок. 1665",
-    "file": "1665_Girl_with_a_Pearl_Earring.jpg"
+    "id": "lady-ermine",
+    "title": "Дама с горностаем",
+    "artist": "Леонардо да Винчи",
+    "year": "1489-1491",
+    "file": "Dama_z_gronostajem.jpg"
   },
   {
-    "id": "persistence-of-memory",
-    "title": "Постоянство памяти",
-    "artist": "Сальвадор Дали",
-    "year": "1931",
-    "file": "The_Persistence_of_Memory.jpg"
+    "id": "vitruvian-man",
+    "title": "Витрувианский человек",
+    "artist": "Леонардо да Винчи",
+    "year": "ок. 1490",
+    "file": "Da_Vinci_Vitruve_Luc_Viatour.jpg"
+  },
+  {
+    "id": "creation-of-adam",
+    "title": "Сотворение Адама",
+    "artist": "Микеланджело",
+    "year": "1512",
+    "file": "Michelangelo_-_Creation_of_Adam_(cropped).jpg"
+  },
+  {
+    "id": "school-of-athens",
+    "title": "Афинская школа",
+    "artist": "Рафаэль",
+    "year": "1509-1511",
+    "file": "\"The_School_of_Athens\"_by_Raffaello_Sanzio_da_Urbino.jpg"
+  },
+  {
+    "id": "sistine-madonna",
+    "title": "Сикстинская мадонна",
+    "artist": "Рафаэль",
+    "year": "1512",
+    "file": "RAFAEL_-_Madonna_Sixtina_(Gemäldegalerie_Alter_Meister,_Dresde,_1513-14._Óleo_sobre_lienzo,_265_x_196_cm).jpg"
   },
   {
     "id": "birth-of-venus",
@@ -42,25 +56,60 @@
     "file": "Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
   },
   {
-    "id": "the-kiss",
-    "title": "Поцелуй",
-    "artist": "Густав Климт",
-    "year": "1908",
-    "file": "The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
+    "id": "primavera",
+    "title": "Весна",
+    "artist": "Сандро Боттичелли",
+    "year": "ок. 1482",
+    "file": "Botticelli-primavera.jpg"
   },
   {
-    "id": "sunflowers",
-    "title": "Подсолнухи",
-    "artist": "Винсент Ван Гог",
-    "year": "1888",
-    "file": "Vincent_Willem_van_Gogh_127.jpg"
+    "id": "the-tempest",
+    "title": "Гроза",
+    "artist": "Джорджоне",
+    "year": "ок. 1508",
+    "file": "Giorgione_019.jpg"
   },
   {
-    "id": "impression-sunrise",
-    "title": "Впечатление. Восходящее солнце",
-    "artist": "Клод Моне",
-    "year": "1872",
-    "file": "Monet_-_Impression,_Sunrise.jpg"
+    "id": "venus-of-urbino",
+    "title": "Венера Урбинская",
+    "artist": "Тициан",
+    "year": "1538",
+    "file": "Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "garden-earthly",
+    "title": "Сад земных наслаждений",
+    "artist": "Иероним Босх",
+    "year": "ок. 1500",
+    "file": "The_Garden_of_earthly_delights.jpg"
+  },
+  {
+    "id": "arnolfini-portrait",
+    "title": "Портрет четы Арнольфини",
+    "artist": "Ян ван Эйк",
+    "year": "1434",
+    "file": "Van_Eyck_-_Arnolfini_Portrait.jpg"
+  },
+  {
+    "id": "ghent-altarpiece",
+    "title": "Гентский алтарь",
+    "artist": "Ян ван Эйк",
+    "year": "1432",
+    "file": "Lamgods_open.jpg"
+  },
+  {
+    "id": "hunters-in-snow",
+    "title": "Охотники на снегу",
+    "artist": "Питер Брейгель",
+    "year": "1565",
+    "file": "Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "tower-of-babel",
+    "title": "Вавилонская башня",
+    "artist": "Питер Брейгель",
+    "year": "1563",
+    "file": "Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg"
   },
   {
     "id": "night-watch",
@@ -70,6 +119,97 @@
     "file": "The_Nightwatch_by_Rembrandt.jpg"
   },
   {
+    "id": "anatomy-tulp",
+    "title": "Урок анатомии доктора Тульпа",
+    "artist": "Рембрандт",
+    "year": "1632",
+    "file": "Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg"
+  },
+  {
+    "id": "return-prodigal",
+    "title": "Возвращение блудного сына",
+    "artist": "Рембрандт",
+    "year": "1668",
+    "file": "Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "pearl-earring",
+    "title": "Девушка с жемчужной серёжкой",
+    "artist": "Ян Вермеер",
+    "year": "ок. 1665",
+    "file": "1665_Girl_with_a_Pearl_Earring.jpg"
+  },
+  {
+    "id": "milkmaid",
+    "title": "Молочница",
+    "artist": "Ян Вермеер",
+    "year": "ок. 1660",
+    "file": "Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "las-meninas",
+    "title": "Менины",
+    "artist": "Диего Веласкес",
+    "year": "1656",
+    "file": "Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg"
+  },
+  {
+    "id": "calling-matthew",
+    "title": "Призвание апостола Матфея",
+    "artist": "Караваджо",
+    "year": "1600",
+    "file": "The_Calling_of_Saint_Matthew-Caravaggo_(1599-1600).jpg"
+  },
+  {
+    "id": "judith-holofernes",
+    "title": "Юдифь и Олоферн",
+    "artist": "Караваджо",
+    "year": "1599",
+    "file": "Caravaggio_-_Giuditta_e_Oloferne_(ca._1599).jpg"
+  },
+  {
+    "id": "raft-of-medusa",
+    "title": "Плот «Медузы»",
+    "artist": "Теодор Жерико",
+    "year": "1819",
+    "file": "JEAN_LOUIS_THÉODORE_GÉRICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg"
+  },
+  {
+    "id": "liberty-leading",
+    "title": "Свобода, ведущая народ",
+    "artist": "Эжен Делакруа",
+    "year": "1830",
+    "file": "Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg"
+  },
+  {
+    "id": "wanderer-fog",
+    "title": "Странник над морем тумана",
+    "artist": "Каспар Давид Фридрих",
+    "year": "1818",
+    "file": "Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"
+  },
+  {
+    "id": "third-of-may",
+    "title": "Третье мая 1808 года",
+    "artist": "Франсиско Гойя",
+    "year": "1814",
+    "file": "El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg"
+  },
+  {
+    "id": "saturn-devouring",
+    "title": "Сатурн, пожирающий своего сына",
+    "artist": "Франсиско Гойя",
+    "year": "1819-1823",
+    "file": "Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg"
+  },
+  {
+    "id": "fighting-temeraire",
+    "title": "Последний рейс корабля «Отважный»",
+    "artist": "Уильям Тёрнер",
+    "year": "1839",
+    "file": "Turner,_J._M._W._-_The_Fighting_Téméraire_tugged_to_her_last_Berth_to_be_broken.jpg"
+  },
+  {
     "id": "ninth-wave",
     "title": "Девятый вал",
     "artist": "Иван Айвазовский",
@@ -77,18 +217,228 @@
     "file": "Hovhannes_Aivazovsky_-_The_Ninth_Wave_-_Google_Art_Project.jpg"
   },
   {
-    "id": "bogatyrs",
-    "title": "Богатыри",
-    "artist": "Виктор Васнецов",
-    "year": "1898",
-    "file": "Vasnetsov_Bogatyrs.jpg"
+    "id": "gleaners",
+    "title": "Сборщицы колосьев",
+    "artist": "Жан-Франсуа Милле",
+    "year": "1857",
+    "file": "Jean-François_Millet_-_Gleaners_-_Google_Art_Project_2.jpg"
   },
   {
-    "id": "morning-pines",
-    "title": "Утро в сосновом лесу",
-    "artist": "Иван Шишкин",
+    "id": "angelus",
+    "title": "Анжелюс",
+    "artist": "Жан-Франсуа Милле",
+    "year": "1859",
+    "file": "JEAN-FRANÇOIS_MILLET_-_El_Ángelus_(Museo_de_Orsay,_1857-1859._Óleo_sobre_lienzo,_55.5_x_66_cm).jpg"
+  },
+  {
+    "id": "origin-of-world",
+    "title": "Происхождение мира",
+    "artist": "Гюстав Курбе",
+    "year": "1866",
+    "file": "Origin-of-the-World.jpg"
+  },
+  {
+    "id": "olympia",
+    "title": "Олимпия",
+    "artist": "Эдуард Мане",
+    "year": "1863",
+    "file": "Edouard_Manet_-_Olympia_-_Google_Art_Project_3.jpg"
+  },
+  {
+    "id": "luncheon-grass",
+    "title": "Завтрак на траве",
+    "artist": "Эдуард Мане",
+    "year": "1863",
+    "file": "Edouard_Manet_-_Luncheon_on_the_Grass_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "bar-folies",
+    "title": "Бар «Фоли-Бержер»",
+    "artist": "Эдуард Мане",
+    "year": "1882",
+    "file": "Edouard_Manet,_A_Bar_at_the_Folies-Bergère.jpg"
+  },
+  {
+    "id": "impression-sunrise",
+    "title": "Впечатление. Восходящее солнце",
+    "artist": "Клод Моне",
+    "year": "1872",
+    "file": "Monet_-_Impression,_Sunrise.jpg"
+  },
+  {
+    "id": "water-lilies-pond",
+    "title": "Пруд с водяными лилиями",
+    "artist": "Клод Моне",
+    "year": "1899",
+    "file": "Water-Lilies-and-Japanese-Bridge-(1897-1899)-Monet.jpg"
+  },
+  {
+    "id": "haystacks-monet",
+    "title": "Стога сена",
+    "artist": "Клод Моне",
+    "year": "1890",
+    "file": "Monet_-_Haystacks,_1890-91,_D.1966-0001.jpg"
+  },
+  {
+    "id": "rouen-cathedral",
+    "title": "Руанский собор",
+    "artist": "Клод Моне",
+    "year": "1894",
+    "file": "Claude_Monet_-_Rouen_Cathedral,_Facade_(Sunset).JPG"
+  },
+  {
+    "id": "bal-du-moulin",
+    "title": "Бал в Мулен де ла Галетт",
+    "artist": "Огюст Ренуар",
+    "year": "1876",
+    "file": "Auguste_Renoir_-_Dance_at_Le_Moulin_de_la_Galette_-_Musée_d'Orsay_RF_2739_(derivative_work_-_AutoContrast_edit_in_LCH_space).jpg"
+  },
+  {
+    "id": "luncheon-boating",
+    "title": "Завтрак гребцов",
+    "artist": "Огюст Ренуар",
+    "year": "1881",
+    "file": "Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "absinthe-degas",
+    "title": "Абсент",
+    "artist": "Эдгар Дега",
+    "year": "1876",
+    "file": "Edgar_Degas_-_In_a_Café_-_Google_Art_Project_2.jpg"
+  },
+  {
+    "id": "ballet-rehearsal",
+    "title": "Репетиция балета",
+    "artist": "Эдгар Дега",
+    "year": "1874",
+    "file": "Edgar_Degas_-_The_Ballet_Class_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "paris-rainy",
+    "title": "Улица Парижа в дождливый день",
+    "artist": "Гюстав Кайботт",
+    "year": "1877",
+    "file": "Gustave_Caillebotte_-_Paris_Street;_Rainy_Day_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "starry-night",
+    "title": "Звёздная ночь",
+    "artist": "Винсент Ван Гог",
     "year": "1889",
-    "file": "Ivan_Shishkin_-_Утро_в_сосновом_лесу.jpg"
+    "file": "Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "sunflowers",
+    "title": "Подсолнухи",
+    "artist": "Винсент Ван Гог",
+    "year": "1888",
+    "file": "Vincent_Willem_van_Gogh_127.jpg"
+  },
+  {
+    "id": "self-portrait-vg",
+    "title": "Автопортрет",
+    "artist": "Винсент Ван Гог",
+    "year": "1889",
+    "file": "Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "bedroom-arles",
+    "title": "Спальня в Арле",
+    "artist": "Винсент Ван Гог",
+    "year": "1888",
+    "file": "Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "cafe-terrace",
+    "title": "Ночная терраса кафе",
+    "artist": "Винсент Ван Гог",
+    "year": "1888",
+    "file": "Vincent_Willem_van_Gogh_-_Cafe_Terrace_at_Night_(Yorck).jpg"
+  },
+  {
+    "id": "wheatfield-crows",
+    "title": "Пшеничное поле с воронами",
+    "artist": "Винсент Ван Гог",
+    "year": "1890",
+    "file": "Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "mont-sainte-victoire",
+    "title": "Гора Сент-Виктуар",
+    "artist": "Поль Сезанн",
+    "year": "1904",
+    "file": "Paul_Cézanne_108.jpg"
+  },
+  {
+    "id": "where-do-we-come",
+    "title": "Откуда мы? Кто мы? Куда мы идём?",
+    "artist": "Поль Гоген",
+    "year": "1897",
+    "file": "Paul_Gauguin_-_D'ou_venons-nous.jpg"
+  },
+  {
+    "id": "yellow-christ",
+    "title": "Жёлтый Христос",
+    "artist": "Поль Гоген",
+    "year": "1889",
+    "file": "Gauguin_Il_Cristo_giallo.jpg"
+  },
+  {
+    "id": "sunday-grande-jatte",
+    "title": "Воскресенье на острове Гранд-Жатт",
+    "artist": "Жорж Сёра",
+    "year": "1886",
+    "file": "A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg"
+  },
+  {
+    "id": "the-scream",
+    "title": "Крик",
+    "artist": "Эдвард Мунк",
+    "year": "1893",
+    "file": "Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg"
+  },
+  {
+    "id": "madonna-munch",
+    "title": "Мадонна",
+    "artist": "Эдвард Мунк",
+    "year": "1894",
+    "file": "Edvard_Munch_-_Madonna_(1894-1895).jpg"
+  },
+  {
+    "id": "the-kiss",
+    "title": "Поцелуй",
+    "artist": "Густав Климт",
+    "year": "1908",
+    "file": "The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
+  },
+  {
+    "id": "judith-klimt",
+    "title": "Юдифь и голова Олоферна",
+    "artist": "Густав Климт",
+    "year": "1901",
+    "file": "Gustav_Klimt_039.jpg"
+  },
+  {
+    "id": "isle-of-dead",
+    "title": "Остров мёртвых",
+    "artist": "Арнольд Бёклин",
+    "year": "1883",
+    "file": "Arnold_Böcklin_-_Die_Toteninsel_III_(Alte_Nationalgalerie,_Berlin).jpg"
+  },
+  {
+    "id": "composition-vii",
+    "title": "Композиция VII",
+    "artist": "Василий Кандинский",
+    "year": "1913",
+    "file": "Vassily_Kandinsky,_1913_-_Composition_7.jpg"
+  },
+  {
+    "id": "composition-viii",
+    "title": "Композиция VIII",
+    "artist": "Василий Кандинский",
+    "year": "1923",
+    "file": "Vassily_Kandinsky,_1923_-_Composition_8,_huile_sur_toile,_140_cm_x_201_cm,_Musée_Guggenheim,_New_York.jpg"
   },
   {
     "id": "the-dance",
@@ -98,32 +448,95 @@
     "file": "La_danse_(I)_by_Matisse.jpg"
   },
   {
-    "id": "liberty-leading",
-    "title": "Свобода, ведущая народ",
-    "artist": "Эжен Делакруа",
-    "year": "1830",
-    "file": "Eugène_Delacroix_-_La_liberté_guidant_le_peuple.jpg"
+    "id": "the-cry-redon",
+    "title": "Циклоп",
+    "artist": "Одилон Редон",
+    "year": "1914",
+    "file": "Odilon_Redon_-_The_Cyclops,_c._1914.jpg"
   },
   {
-    "id": "red-horse",
-    "title": "Купание красного коня",
-    "artist": "Кузьма Петров-Водкин",
-    "year": "1912",
-    "file": "Petrov-Vodkin_Kupanie_krasnogo_konya.jpg"
+    "id": "black-square",
+    "title": "Чёрный квадрат",
+    "artist": "Казимир Малевич",
+    "year": "1915",
+    "file": "Kazimir_Malevich,_1915,_Black_Suprematic_Square,_oil_on_linen_canvas,_79.5_x_79.5_cm,_Tretyakov_Gallery,_Moscow.jpg"
   },
   {
-    "id": "boyaryna-morozova",
-    "title": "Боярыня Морозова",
-    "artist": "Василий Суриков",
-    "year": "1887",
-    "file": "Vasily_Surikov_-_Боярыня_Морозова_-_Google_Art_Project.jpg"
+    "id": "white-on-white",
+    "title": "Белое на белом",
+    "artist": "Казимир Малевич",
+    "year": "1918",
+    "file": "Kazimir_Malevich_-_'Suprematist_Composition-_White_on_White',_oil_on_canvas,_1918,_Museum_of_Modern_Art.jpg"
   },
   {
-    "id": "girl-with-peaches",
-    "title": "Девочка с персиками",
-    "artist": "Валентин Серов",
-    "year": "1887",
-    "file": "Серов_Валентин._Девочка_с_персиками._1887.jpg"
+    "id": "nighthawks",
+    "title": "Полуночники",
+    "artist": "Эдвард Хоппер",
+    "year": "1942",
+    "file": "Nighthawks_by_Edward_Hopper_1942.jpg"
+  },
+  {
+    "id": "american-gothic",
+    "title": "Американская готика",
+    "artist": "Грант Вуд",
+    "year": "1930",
+    "file": "Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "washington-crossing",
+    "title": "Вашингтон переправляется через Делавэр",
+    "artist": "Эмануэль Лойце",
+    "year": "1851",
+    "file": "Washington_Crossing_the_Delaware_by_Emanuel_Leutze,_MMA-NYC,_1851.jpg"
+  },
+  {
+    "id": "bogatyrs",
+    "title": "Богатыри",
+    "artist": "Виктор Васнецов",
+    "year": "1898",
+    "file": "1898_Vasnetsov_Bogatyrs_anagoria.JPG"
+  },
+  {
+    "id": "alyonushka",
+    "title": "Алёнушка",
+    "artist": "Виктор Васнецов",
+    "year": "1881",
+    "file": "Vasnetsov_Alenushka.jpg"
+  },
+  {
+    "id": "ivan-tsarevich",
+    "title": "Иван-царевич на Сером Волке",
+    "artist": "Виктор Васнецов",
+    "year": "1889",
+    "file": "Wiktor_Michajlowitsch_Wassnezow_004.jpg"
+  },
+  {
+    "id": "morning-pines",
+    "title": "Утро в сосновом лесу",
+    "artist": "Иван Шишкин",
+    "year": "1889",
+    "file": "Shishkin,_Ivan_-_Morning_in_a_Pine_Forest.jpg"
+  },
+  {
+    "id": "rye-shishkin",
+    "title": "Рожь",
+    "artist": "Иван Шишкин",
+    "year": "1878",
+    "file": "Ivan_Shishkin_-_Рожь_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "rooks-have-come",
+    "title": "Грачи прилетели",
+    "artist": "Алексей Саврасов",
+    "year": "1871",
+    "file": "Aleksey_Savrasov_-_Грачи_прилетели_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "unknown-kramskoy",
+    "title": "Неизвестная",
+    "artist": "Иван Крамской",
+    "year": "1883",
+    "file": "Kramskoy_Portrait_of_a_Woman.jpg"
   },
   {
     "id": "volga-boatmen",
@@ -133,10 +546,234 @@
     "file": "Ilia_Efimovich_Repin_(1844-1930)_-_Volga_Boatmen_(1870-1873).jpg"
   },
   {
-    "id": "olympia",
-    "title": "Олимпия",
-    "artist": "Эдуард Мане",
-    "year": "1863",
-    "file": "Edouard_Manet_-_Olympia_-_Google_Art_Project_3.jpg"
+    "id": "ivan-terrible-son",
+    "title": "Иван Грозный и сын его Иван",
+    "artist": "Илья Репин",
+    "year": "1885",
+    "file": "Iván_el_Terrible_y_su_hijo,_por_Iliá_Repin.jpg"
+  },
+  {
+    "id": "cossacks-letter",
+    "title": "Запорожцы пишут письмо турецкому султану",
+    "artist": "Илья Репин",
+    "year": "1891",
+    "file": "Repin_Cossacks.jpg"
+  },
+  {
+    "id": "boyaryna-morozova",
+    "title": "Боярыня Морозова",
+    "artist": "Василий Суриков",
+    "year": "1887",
+    "file": "Vasily_Surikov_-_Боярыня_Морозова_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "morning-of-execution",
+    "title": "Утро стрелецкой казни",
+    "artist": "Василий Суриков",
+    "year": "1881",
+    "file": "Vasily_Surikov_-_Утро_стрелецкой_казни_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "girl-with-peaches",
+    "title": "Девочка с персиками",
+    "artist": "Валентин Серов",
+    "year": "1887",
+    "file": "Valentin_Serov_-_Девочка_с_персиками._Портрет_В.С.Мамонтовой_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "merchant-wife-tea",
+    "title": "Купчиха за чаем",
+    "artist": "Борис Кустодиев",
+    "year": "1918",
+    "file": "Boris_Kustodiev_-_Merchant's_Wife_at_Tea_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "apotheosis-of-war",
+    "title": "Апофеоз войны",
+    "artist": "Василий Верещагин",
+    "year": "1871",
+    "file": "Apotheosis.jpg"
+  },
+  {
+    "id": "appearance-christ",
+    "title": "Явление Христа народу",
+    "artist": "Александр Иванов",
+    "year": "1857",
+    "file": "Александр_Андреевич_Иванов_-_Явление_Христа_народу_(Явление_Мессии)_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "rainbow-savrasov",
+    "title": "Радуга",
+    "artist": "Алексей Саврасов",
+    "year": "1875",
+    "file": "Savrasov_rainbow.JPG"
+  },
+  {
+    "id": "red-horse",
+    "title": "Купание красного коня",
+    "artist": "Кузьма Петров-Водкин",
+    "year": "1912",
+    "file": "Bathing_of_a_Red_Horse_(Petrov-Vodkin).jpg"
+  },
+  {
+    "id": "demon-vrubel",
+    "title": "Демон сидящий",
+    "artist": "Михаил Врубель",
+    "year": "1890",
+    "file": "Vrubel_Demon.jpg"
+  },
+  {
+    "id": "swan-princess",
+    "title": "Царевна-Лебедь",
+    "artist": "Михаил Врубель",
+    "year": "1900",
+    "file": "Tsarevna-Lebed_by_Mikhail_Vrubel_(brightened).jpg"
+  },
+  {
+    "id": "monk-by-sea",
+    "title": "Монах у моря",
+    "artist": "Каспар Давид Фридрих",
+    "year": "1810",
+    "file": "Caspar_David_Friedrich_-_Der_Mönch_am_Meer_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "ophelia-millais",
+    "title": "Офелия",
+    "artist": "Джон Эверетт Милле",
+    "year": "1851-1852",
+    "file": "John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "lady-shalott",
+    "title": "Леди из Шалота",
+    "artist": "Джон Уильям Уотерхаус",
+    "year": "1888",
+    "file": "John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "great-wave",
+    "title": "Большая волна в Канагаве",
+    "artist": "Кацусика Хокусай",
+    "year": "1831",
+    "file": "Tsunami_by_hokusai_19th_century.jpg"
+  },
+  {
+    "id": "red-fuji",
+    "title": "Победный ветер. Ясный день (Красная Фудзи)",
+    "artist": "Кацусика Хокусай",
+    "year": "1831",
+    "file": "Red_Fuji_southern_wind_clear_morning.jpg"
+  },
+  {
+    "id": "peasant-wedding",
+    "title": "Крестьянская свадьба",
+    "artist": "Питер Брейгель",
+    "year": "ок. 1567",
+    "file": "Pieter_Bruegel_the_Elder_-_Peasant_Wedding_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "icarus-bruegel",
+    "title": "Пейзаж с падением Икара",
+    "artist": "Питер Брейгель",
+    "year": "ок. 1558",
+    "file": "Pieter_Bruegel_de_Oude_-_De_val_van_Icarus.jpg"
+  },
+  {
+    "id": "portrait-adele",
+    "title": "Портрет Адели Блох-Бауэр I",
+    "artist": "Густав Климт",
+    "year": "1907",
+    "file": "Gustav_Klimt_046.jpg"
+  },
+  {
+    "id": "hay-wain",
+    "title": "Телега с сеном",
+    "artist": "Джон Констебл",
+    "year": "1821",
+    "file": "John_Constable_The_Hay_Wain.jpg"
+  },
+  {
+    "id": "death-of-marat",
+    "title": "Смерть Марата",
+    "artist": "Жак-Луи Давид",
+    "year": "1793",
+    "file": "Death_of_Marat_by_David.jpg"
+  },
+  {
+    "id": "oath-horatii",
+    "title": "Клятва Горациев",
+    "artist": "Жак-Луи Давид",
+    "year": "1784",
+    "file": "Jacques-Louis_David_-_Oath_of_the_Horatii_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "sea-of-ice",
+    "title": "Море льдов",
+    "artist": "Каспар Давид Фридрих",
+    "year": "1824",
+    "file": "Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle_-_02.jpg"
+  },
+  {
+    "id": "massacre-chios",
+    "title": "Резня на Хиосе",
+    "artist": "Эжен Делакруа",
+    "year": "1824",
+    "file": "Eugène_Delacroix_-_Le_Massacre_de_Scio.jpg"
+  },
+  {
+    "id": "burial-ornans",
+    "title": "Похороны в Орнане",
+    "artist": "Гюстав Курбе",
+    "year": "1850",
+    "file": "Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg"
+  },
+  {
+    "id": "scream-second",
+    "title": "Меланхолия",
+    "artist": "Эдвард Мунк",
+    "year": "1894",
+    "file": "Edvard_Munch_-_Melancholy_(1894-96).jpg"
+  },
+  {
+    "id": "apples-cezanne",
+    "title": "Натюрморт с яблоками",
+    "artist": "Поль Сезанн",
+    "year": "1894",
+    "file": "Paul_Cézanne_181.jpg"
+  },
+  {
+    "id": "self-port-rembrandt",
+    "title": "Автопортрет",
+    "artist": "Рембрандт",
+    "year": "1659",
+    "file": "Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "vermeer-geographer",
+    "title": "Географ",
+    "artist": "Ян Вермеер",
+    "year": "1669",
+    "file": "Jan_Vermeer_-_The_Geographer.JPG"
+  },
+  {
+    "id": "brueghel-icarus",
+    "title": "Падение мятежных ангелов",
+    "artist": "Питер Брейгель",
+    "year": "1562",
+    "file": "Pieter_Bruegel_the_Elder_-_The_Fall_of_the_Rebel_Angels_-_Google_Art_Project.jpg"
+  },
+  {
+    "id": "klimt-tree-of-life",
+    "title": "Древо жизни",
+    "artist": "Густав Климт",
+    "year": "1909",
+    "file": "Gustav_Klimt_005.jpg"
+  },
+  {
+    "id": "rublev-trinity",
+    "title": "Троица",
+    "artist": "Андрей Рублёв",
+    "year": "ок. 1425",
+    "file": "Angelsatmamre-trinity-rublev-1410.jpg"
   }
 ]
