@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { QUOTES, getDailyQuoteIdx, pickRandomQuoteIdx } from '@/lib/quotes';
+import { computeStreak, pluralDays, type StreakInfo } from '@/lib/streak';
 
 interface Section {
   to: string;
@@ -20,8 +21,20 @@ const SECTIONS: Section[] = [
 export default function HomeScreen() {
   const [quoteIdx, setQuoteIdx] = useState<number>(() => getDailyQuoteIdx());
   const quote = QUOTES[quoteIdx];
-
   const refreshQuote = () => setQuoteIdx((prev) => pickRandomQuoteIdx(prev));
+
+  // Серия — считаем после монтирования (localStorage есть только на клиенте).
+  const [streak, setStreak] = useState<StreakInfo>({ current: 0, todayDone: false, totalAttempts: 0, totalDays: 0 });
+  useEffect(() => { setStreak(computeStreak()); }, []);
+
+  const streakStatus =
+    streak.current === 0
+      ? 'Тренируйся хотя бы раз в день — серия пойдёт.'
+      : streak.todayDone
+        ? 'Сегодня тренировался. Так держать.'
+        : 'Не сорви сегодня — иначе серия обнулится.';
+  const streakMod =
+    streak.current === 0 ? 'streak-empty' : streak.todayDone ? 'streak-active' : 'streak-warn';
 
   return (
     <div className="screen">
@@ -35,6 +48,16 @@ export default function HomeScreen() {
         связного повествования и аргументации. Цель — <strong>не идеально, а беглее</strong>.
         Все упражнения распознают речь автоматически, считают темп и дают грейд.
       </div>
+
+      <section className={`streak-badge ${streakMod}`} aria-label="Серия дней подряд">
+        <div className="streak-num">{streak.current}</div>
+        <div className="streak-meta">
+          <div className="streak-label">
+            {streak.current === 0 ? 'Серия' : `${pluralDays(streak.current)} подряд`}
+          </div>
+          <div className="streak-status">{streakStatus}</div>
+        </div>
+      </section>
 
       <section className="instructions-block">
         <div className="heading">Как пользоваться</div>

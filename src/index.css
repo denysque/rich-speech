@@ -1251,6 +1251,56 @@ h1, h2, h3 {
   border-left-color: var(--text-dim);
 }
 
+/* === Streak badge — серия подряд идущих дней тренировок ==================
+   Большая красная серифная цифра + uppercase подпись + статус («сегодня
+   тренировался» / «не сорви сегодня»). Editorial — между тонкой rule
+   сверху и толстой снизу. */
+.streak-badge {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 0 16px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1.5px solid var(--rule);
+  margin-top: 4px;
+}
+.streak-badge .streak-num {
+  font-family: var(--font-serif);
+  font-variation-settings: "opsz" 144, "wght" 700;
+  font-size: clamp(48px, 14vw, 72px);
+  line-height: 0.9;
+  color: var(--accent);
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+.streak-badge .streak-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+.streak-badge .streak-label {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text);
+}
+.streak-badge .streak-status {
+  font-family: var(--font-serif);
+  font-variation-settings: "opsz" 72;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+.streak-badge.streak-active .streak-status { color: var(--text); }
+.streak-badge.streak-warn .streak-status { color: var(--accent); font-style: normal; font-weight: 600; }
+.streak-badge.streak-empty { gap: 14px; }
+.streak-badge.streak-empty .streak-num { color: var(--text-dim); }
+
 /* === Instructions block — короткая инструкция на главной =================
    Нумерованный список в editorial-стиле: красный круглый счётчик +
    серифный текст, тонкая rule снизу. */
