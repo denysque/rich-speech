@@ -20,7 +20,7 @@ export default function HomeScreen() {
     <div className="screen">
       <header className="title-block">
         <h1>Rich Speech</h1>
-        <p>Тренажёры устной речи</p>
+        <p>Тренажёр устной речи</p>
       </header>
 
       <nav className="pos-list">
