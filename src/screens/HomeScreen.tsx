@@ -50,8 +50,14 @@ export default function HomeScreen() {
 
       <div className="grow" />
 
-      <footer className="footer-promo">
-        <div>made by Denis Telychko · 2026</div>
+      <footer className="footer-promo has-brand">
+        <img className="brand-mark" src="/logo-tb.png" alt="" aria-hidden />
+        <a href="https://t.me/tellychko" target="_blank" rel="noopener" aria-label="Telegram автора">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+            <path d="M21.945 4.36L18.79 19.21c-.24 1.05-.86 1.31-1.74.81l-4.81-3.55-2.32 2.23c-.26.26-.47.47-.96.47l.34-4.86 8.84-7.99c.39-.34-.08-.53-.6-.19L7.62 12.99 2.82 11.5c-1.04-.32-1.06-1.04.22-1.54l18.74-7.22c.87-.32 1.63.2 1.36 1.62z"/>
+          </svg>
+          <span>by @tellychko</span>
+        </a>
       </footer>
     </div>
   );
