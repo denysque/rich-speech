@@ -7,7 +7,7 @@ import LetterTrainer from '@/screens/LetterTrainer';
 import AssocTrainer from '@/screens/AssocTrainer';
 import DescribeTrainer from '@/screens/DescribeTrainer';
 import NarrateTrainer from '@/screens/NarrateTrainer';
-import PlaceholderScreen from '@/screens/PlaceholderScreen';
+import ReasonTrainer from '@/screens/ReasonTrainer';
 
 function applyStoredTheme() {
   const t = getSettings().theme;
@@ -29,10 +29,7 @@ export default function App() {
         <Route path="/warmup/assoc" element={<AssocTrainer />} />
         <Route path="/describe" element={<DescribeTrainer />} />
         <Route path="/narrate" element={<NarrateTrainer />} />
-        <Route
-          path="/reason"
-          element={<PlaceholderScreen title="Рассуждение" subtitle="Тренажёр / 03" backTo="/" />}
-        />
+        <Route path="/reason" element={<ReasonTrainer />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

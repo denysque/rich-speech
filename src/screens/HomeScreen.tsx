@@ -12,7 +12,7 @@ const SECTIONS: Section[] = [
   { to: '/warmup',   num: '00', label: 'Разминка',       hint: 'Гимнастика речи перед основными упражнениями', ready: true  },
   { to: '/describe', num: '01', label: 'Описание',       hint: 'Опиши шедевр живописи — композиция, цвет, эмоция', ready: true  },
   { to: '/narrate',  num: '02', label: 'Повествование',  hint: 'Расскажи историю про слово — простой или с прилагательным', ready: true  },
-  { to: '/reason',   num: '03', label: 'Рассуждение',    hint: 'Объясни, докажи, обоснуй позицию',              ready: false },
+  { to: '/reason',   num: '03', label: 'Рассуждение',    hint: 'Отстаивай позицию по спорному тезису — с обязательным аргументом или без', ready: true  },
 ];
 
 export default function HomeScreen() {

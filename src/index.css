@@ -1251,6 +1251,117 @@ h1, h2, h3 {
   border-left-color: var(--text-dim);
 }
 
+/* === Theory block — раскрывающаяся теория в editorial-стиле ============
+   Используется в ReasonTrainer для краткой методички по структуре
+   рассуждения. Толстая чёрная rule сверху, тонкая снизу. Маркер «+/−».
+   ====================================================================== */
+.theory-details {
+  border-top: 1.5px solid var(--rule);
+  border-bottom: 1px solid var(--border);
+  margin-top: 4px;
+}
+.theory-details > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 0;
+  font-size: 10px;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.theory-details > summary::-webkit-details-marker { display: none; }
+.theory-details > summary::after {
+  content: '+';
+  font-size: 20px;
+  color: var(--accent);
+  font-weight: 400;
+  line-height: 1;
+}
+.theory-details[open] > summary::after { content: '−'; }
+.theory-details > .theory-body {
+  padding: 4px 0 18px;
+  font-family: var(--font-serif);
+  font-variation-settings: "opsz" 72;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: var(--text);
+}
+.theory-details > .theory-body p { margin: 0 0 12px; }
+.theory-details > .theory-body strong { color: var(--accent); font-weight: 600; }
+.theory-details > .theory-body h4 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 14px 0 8px;
+  color: var(--text);
+}
+.theory-details > .theory-body ul {
+  margin: 8px 0 12px;
+  padding-left: 0;
+  list-style: none;
+}
+.theory-details > .theory-body li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+.theory-details > .theory-body li::before {
+  content: '·';
+  position: absolute;
+  left: 4px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* === Argument requirement card — показывает обязательный тип
+   аргумента на экране draw, когда в настройках выбран сложный режим. */
+.arg-card {
+  border: 1.5px solid var(--accent);
+  background: var(--accent-tint);
+  border-radius: 0;
+  padding: 14px 16px;
+  margin-top: 4px;
+}
+.arg-card .arg-label {
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.arg-card .arg-name {
+  font-family: var(--font-serif);
+  font-variation-settings: "opsz" 72;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.arg-card .arg-hint {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.arg-card .arg-example {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+
 /* === Brand mark — фирменный знак, живёт в footer-блоке.
    PNG с прозрачным фоном (вырезан из letterpress-оригинала).
    В тёмной теме инвертируем filter'ом — тёмный глиф становится светлым.
